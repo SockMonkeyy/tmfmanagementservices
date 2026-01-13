@@ -96,6 +96,17 @@
   .site-footer .footer-links{
     text-align:center;
   }
+  .hero-image{
+  width:100%;
+  height:100%;
+  border-radius:24px;
+  object-fit:cover;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.hero-media{
+  position:relative;
+}
 }
 
   </style>
@@ -116,34 +127,49 @@
 
   <section class="hero">
     <div class="container">
-      <div class="hero-inner">
-        <div>
-          <h1>Recover Surplus, Excess Proceeds & Unclaimed Funds</h1>
-          <p>Each year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions. TMF Management Services identifies and recovers these funds for their rightful owners—handling research, filings, and follow‑ups end‑to‑end.</p>
-          <div class="kpis">
-            <div>No Upfront Fees*</div>
-            <div>End‑to‑End Handling</div>
-            <div>Professional & Transparent</div>
-          </div>
-          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
-            <a class="cta-btn" href="#contact">Start Free Funds Check</a>
-            <a class="cta-btn alt" href="#process">See How It Works</a>
-          </div>
-        </div>
-        <div class="form-card" id="contact">
-          <h3>Free Funds Check</h3>
-          <p style="font-size:14px">No obligation. We’ll research whether funds may be owed to you.</p>
-          <form action="https://formspree.io/f/xgooeqgy" method="POST">
-            <label>Full Name</label><input name="name" required />
-            <label>Email</label><input type="email" name="email" required />
-            <label>Phone</label><input name="phone" />
-            <label>Property Address (if known)</label><input name="property" />
-            <label>Details (optional)</label><textarea name="message"></textarea>
-            <button type="submit">Check If I’m Owed Money</button>
-          </form>
-          <p style="font-size:12px;margin-top:8px">*In most cases. You pay only if we successfully recover funds.</p>
-        </div>
-      </div>
+      <div class="hero-inner" style="grid-template-columns:1.1fr .9fr .9fr;">
+  
+  <!-- LEFT: TEXT -->
+  <div>
+    <h1>Recover Surplus, Excess Proceeds & Unclaimed Funds</h1>
+    <p>Each year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions. TMF Management Services identifies and recovers these funds for their rightful owners—handling research, filings, and follow-ups end-to-end.</p>
+    <div class="kpis">
+      <div>No Upfront Fees*</div>
+      <div>End-to-End Handling</div>
+      <div>Professional & Transparent</div>
+    </div>
+    <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="cta-btn" href="#contact">Start Free Funds Check</a>
+      <a class="cta-btn alt" href="#process">See How It Works</a>
+    </div>
+  </div>
+
+  <!-- MIDDLE: IMAGE -->
+  <div class="hero-media">
+    <img 
+  src="A_photograph_crafted_digital_photograph_with_graph.png"
+  alt="TMF Management Services asset recovery and financial review"
+  class="hero-image"
+/>
+  </div>
+
+  <!-- RIGHT: FORM -->
+  <div class="form-card" id="contact">
+    <h3>Free Funds Check</h3>
+    <p style="font-size:14px">No obligation. We’ll research whether funds may be owed to you.</p>
+    <form action="https://formspree.io/f/xgooeqgy" method="POST">
+      <label>Full Name</label><input name="name" required />
+      <label>Email</label><input type="email" name="email" required />
+      <label>Phone</label><input name="phone" />
+      <label>Property Address (if known)</label><input name="property" />
+      <label>Details (optional)</label><textarea name="message"></textarea>
+      <button type="submit">Check If I’m Owed Money</button>
+    </form>
+    <p style="font-size:12px;margin-top:8px">*In most cases. You pay only if we successfully recover funds.</p>
+  </div>
+
+</div>
+
     </div>
   </section>
 
