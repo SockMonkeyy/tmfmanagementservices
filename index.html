@@ -4,166 +4,234 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TMF Management Services | Surplus & Unclaimed Funds Recovery</title>
-  <meta name="description" content="TMF Management Services helps individuals and estates recover surplus, excess proceeds, and other unclaimed funds. Free funds check. No upfront fees in most cases." />
+  <meta name="description" content="TMF Management Services helps individuals and estates recover surplus, excess proceeds, and other unclaimed funds. No upfront fees in most cases." />
+
   <style>
     :root{
-      --blue:#0b5ed7;
-      --blue-2:#0d6efd;
+      --primary:#0b5ed7;
+      --primary-dark:#084298;
       --ink:#0f172a;
       --muted:#475569;
       --line:#e5e7eb;
       --bg:#ffffff;
-      --panel:#f8fafc;
+      --soft:#f8fafc;
+      --panel:#f1f5f9;
     }
+
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:Inter, Arial, Helvetica, sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
-    a{color:var(--blue);text-decoration:none}
+    a{text-decoration:none}
+
     .container{max-width:1180px;margin:0 auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line)}
-    .brand{display:flex;align-items:center;gap:14px}
-    .cta-btn{background:var(--blue);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700}
-    .cta-btn.alt{background:#fff;color:var(--blue);border:1px solid var(--blue)}
-    h1{font-size:44px;line-height:1.15;margin-bottom:14px}
-    h2{font-size:30px;margin:56px 0 12px}
-    h3{font-size:20px;margin:0 0 8px}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:22px 0;border-bottom:1px solid var(--line);
+    }
+    .brand{display:flex;align-items:center;gap:16px}
+    .brand img{height:96px}
+
+    .cta-btn{
+      background:var(--primary);color:#fff;padding:14px 22px;border-radius:8px;
+      font-weight:700;display:inline-block
+    }
+    .cta-btn.alt{
+      background:#fff;color:var(--primary);border:2px solid var(--primary)
+    }
+
+    h1{font-size:46px;line-height:1.15;margin-bottom:16px}
+    h2{font-size:34px;margin:80px 0 16px}
+    h3{font-size:20px;margin-bottom:8px}
     p{color:var(--muted);margin-bottom:14px}
-    ul{margin-left:18px;color:var(--muted)}
-    li{margin-bottom:8px}
-    .hero{background:linear-gradient(180deg,#f8fbff, #ffffff);border-bottom:1px solid var(--line)}
-    .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:56px 0}
-    @media(max-width:900px){.hero-inner{grid-template-columns:1fr}}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
-    .kpis div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;font-weight:700}
-    .panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
-    .form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 25px rgba(0,0,0,.05)}
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(180deg,#f8fbff,#ffffff);
+      border-bottom:1px solid var(--line);
+    }
+    .hero-inner{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:40px;
+      align-items:center;padding:80px 0
+    }
+    @media(max-width:900px){
+      .hero-inner{grid-template-columns:1fr}
+    }
+
+    .kpis{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px
+    }
+    .kpis div{
+      background:#fff;border:1px solid var(--line);border-radius:10px;
+      padding:16px;text-align:center;font-weight:700
+    }
+
+    /* FORM */
+    .form-card{
+      background:#fff;border:1px solid var(--line);border-radius:16px;
+      padding:28px;box-shadow:0 12px 30px rgba(0,0,0,.08)
+    }
     label{display:block;margin-bottom:6px;font-size:13px;font-weight:700}
-    input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #cbd5f5;margin-bottom:12px}
-    button{width:100%;padding:14px;border-radius:10px;border:none;background:var(--blue);color:#fff;font-weight:800;cursor:pointer}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    input,textarea{
+      width:100%;padding:12px 14px;border-radius:8px;
+      border:1px solid #cbd5e1;margin-bottom:12px
+    }
+    button{
+      width:100%;padding:14px;border-radius:8px;border:none;
+      background:var(--primary);color:#fff;font-weight:800;font-size:16px;cursor:pointer
+    }
+
+    /* SECTIONS */
+    .panel{
+      background:var(--panel);border-radius:16px;padding:32px;border:1px solid var(--line)
+    }
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
     @media(max-width:900px){.grid-3{grid-template-columns:1fr}}
-    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
-    .band{background:#f1f6ff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:36px 0}
-    .cta{background:linear-gradient(135deg,#0b5ed7,#0d6efd);color:#fff;border-radius:28px;padding:56px;text-align:center;margin:64px 0}
-    footer{background:linear-gradient(135deg,#0b5ed7,#0d6efd);color:#fff;border-radius:28px;padding:56px;text-align:center;margin:64px 0}
+
+    .card{
+      background:#fff;border:1px solid var(--line);border-radius:14px;
+      padding:26px
+    }
+
+    .band{
+      background:#f8fafc;border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);padding:80px 0;margin-top:80px
+    }
+
+    /* CTA */
+    .cta{
+      background:linear-gradient(135deg,#0b5ed7,#0d6efd);
+      color:#fff;border-radius:28px;padding:80px;text-align:center;margin:100px 0
+    }
+    .cta h2{margin-top:0;color:#fff}
+    .cta p{color:#e0e7ff}
+
+    /* FOOTER */
+    footer{
+      background:#0f172a;color:#cbd5f5;padding:60px 20px;margin-top:120px
+    }
   </style>
 </head>
+
 <body>
+
+<div class="container">
+  <header>
+    <div class="brand">
+      <img src="logo.png" alt="TMF Management Services Logo" />
+      <div>
+        <strong style="font-size:20px">TMF Management Services</strong><br>
+        <span style="color:#64748b;font-size:14px">Surplus & Unclaimed Funds Recovery</span>
+      </div>
+    </div>
+    <a class="cta-btn" href="#contact">Free Funds Check</a>
+  </header>
+</div>
+
+<section class="hero">
   <div class="container">
-    <header>
-      <div class="brand">
-        <img src="logo.png" alt="TMF Management Services Logo" style="height:84px;width:auto" />
-        <div>
-          <strong>TMF Management Services</strong><br />
-          <span style="color:#64748b;font-size:14px">Surplus & Unclaimed Funds Recovery</span>
+    <div class="hero-inner">
+      <div>
+        <h1>Recover Surplus, Excess Proceeds & Unclaimed Funds</h1>
+        <p>
+          Every year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions.
+          TMF Management Services identifies and recovers these funds for their rightful owners — handling
+          research, filings, and follow-ups end-to-end.
+        </p>
+
+        <div class="kpis">
+          <div>No Upfront Fees*</div>
+          <div>End-to-End Handling</div>
+          <div>Professional & Compliant</div>
+        </div>
+
+        <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap">
+          <a class="cta-btn" href="#contact">Start Free Funds Check</a>
+          <a class="cta-btn alt" href="#process">How It Works</a>
         </div>
       </div>
-      <a class="cta-btn" href="#contact">Free Funds Check</a>
-    </header>
+
+      <div class="form-card" id="contact">
+        <h3>Free Funds Check</h3>
+        <p style="font-size:14px">No obligation. We’ll research whether funds may be owed to you.</p>
+
+        <form action="https://formspree.io/f/xgooeqgy" method="POST">
+          <label>Full Name</label><input name="name" required>
+          <label>Email</label><input type="email" name="email" required>
+          <label>Phone</label><input name="phone">
+          <label>Property Address (if known)</label><input name="property">
+          <label>Details (optional)</label><textarea name="message"></textarea>
+          <button type="submit">Check If I’m Owed Money</button>
+        </form>
+
+        <p style="font-size:12px;margin-top:10px">*In most cases. You pay only if we successfully recover funds.</p>
+      </div>
+    </div>
   </div>
+</section>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div>
-          <h1>Recover Surplus, Excess Proceeds & Unclaimed Funds</h1>
-          <p>Each year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions. TMF Management Services identifies and recovers these funds for their rightful owners—handling research, filings, and follow‑ups end‑to‑end.</p>
-          <div class="kpis">
-            <div>No Upfront Fees*</div>
-            <div>End‑to‑End Handling</div>
-            <div>Professional & Transparent</div>
-          </div>
-          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
-            <a class="cta-btn" href="#contact">Start Free Funds Check</a>
-            <a class="cta-btn alt" href="#process">See How It Works</a>
-          </div>
-        </div>
-        <div class="form-card" id="contact">
-          <h3>Free Funds Check</h3>
-          <p style="font-size:14px">No obligation. We’ll research whether funds may be owed to you.</p>
-          <form action="https://formspree.io/f/xgooeqgy" method="POST">
-            <label>Full Name</label><input name="name" required />
-            <label>Email</label><input type="email" name="email" required />
-            <label>Phone</label><input name="phone" />
-            <label>Property Address (if known)</label><input name="property" />
-            <label>Details (optional)</label><textarea name="message"></textarea>
-            <button type="submit">Check If I’m Owed Money</button>
-          </form>
-          <p style="font-size:12px;margin-top:8px">*In most cases. You pay only if we successfully recover funds.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="container">
 
+<h2>What We Do</h2>
+<div class="panel">
+  <p>
+    TMF Management Services provides comprehensive asset recovery for surplus, excess proceeds,
+    and other unclaimed or undistributed funds. We analyze public and private records, verify entitlement,
+    prepare and submit claims, and work directly with courts, counties, trustees, and holders to expedite release.
+  </p>
+</div>
+
+<h2>Types of Funds We Recover</h2>
+<div class="grid-3">
+  <div class="card"><h3>Foreclosure Surplus</h3><p>Proceeds remaining after foreclosure sales.</p></div>
+  <div class="card"><h3>Tax Sale Excess Proceeds</h3><p>Funds remaining after tax deed or tax lien sales.</p></div>
+  <div class="card"><h3>Court Registry Funds</h3><p>Interpleader and court-held funds.</p></div>
+  <div class="card"><h3>Probate & Estate Funds</h3><p>Undistributed funds owed to heirs.</p></div>
+  <div class="card"><h3>Trustee-Held Funds</h3><p>Funds held by trustees and servicers.</p></div>
+  <div class="card"><h3>Other Unclaimed Assets</h3><p>Additional categories requiring forensic research.</p></div>
+</div>
+
+<section id="process" class="band">
   <div class="container">
-    <h2>What We Do</h2>
-    <div class="panel">
-      <p>TMF Management Services provides comprehensive asset recovery for surplus, excess proceeds, and other unclaimed or undistributed funds. We analyze public and private records, verify entitlement, prepare and submit claims, and work directly with courts, counties, trustees, and holders to expedite release.</p>
-    </div>
-
-    <h2>Types of Funds We Recover</h2>
+    <h2>Our Simple 3-Step Process</h2>
     <div class="grid-3">
-      <div class="card"><h3>Foreclosure Surplus</h3><p>Proceeds remaining after a foreclosure sale once liens and costs are satisfied.</p></div>
-      <div class="card"><h3>Tax Sale Excess Proceeds</h3><p>Funds left after a tax deed or tax lien sale that often belong to the former owner.</p></div>
-      <div class="card"><h3>Court Registry Funds</h3><p>Interpleader and registry funds held by courts pending a valid claim.</p></div>
-      <div class="card"><h3>Probate & Estate Funds</h3><p>Undistributed or unclaimed funds owed to heirs or estates.</p></div>
-      <div class="card"><h3>Trustee‑Held Funds</h3><p>Proceeds held by trustees, servicers, or other third parties.</p></div>
-      <div class="card"><h3>Other Unclaimed Funds</h3><p>Additional categories requiring research and formal recovery.</p></div>
+      <div class="card"><h3>1) We Find the Funds</h3><p>We research records across jurisdictions.</p></div>
+      <div class="card"><h3>2) We File the Claim</h3><p>We prepare, submit, and manage documentation.</p></div>
+      <div class="card"><h3>3) You Get Paid</h3><p>Once approved, funds are released.</p></div>
     </div>
+  </div>
+</section>
 
-    <section id="process" class="band">
-      <h2>Our Simple 3‑Step Process</h2>
-      <div class="grid-3">
-        <div class="card"><h3>1) We Find the Funds</h3><p>We research records across jurisdictions to identify funds that may be owed to you.</p></div>
-        <div class="card"><h3>2) We File the Claim</h3><p>We prepare, submit, and manage documentation and follow‑ups.</p></div>
-        <div class="card"><h3>3) You Get Paid</h3><p>Once approved, funds are released. In most cases you pay nothing unless we succeed.</p></div>
-      </div>
-    </section>
+<section class="cta">
+  <h2>Start Your Free Funds Check</h2>
+  <p>You could be owed money and not even know it.</p>
+  <a class="cta-btn alt" href="#contact">Get Started</a>
+</section>
 
-    <h2>Why Choose TMF</h2>
-    <div class="grid-3">
-      <div class="card"><h3>Specialized Focus</h3><p>We focus exclusively on surplus and unclaimed funds recovery.</p></div>
-      <div class="card"><h3>Compliance‑First</h3><p>Accurate filings, deadlines tracked, and transparent communication.</p></div>
-      <div class="card"><h3>Client‑Aligned Fees</h3><p>Success‑based in most cases—our incentives align with yours.</p></div>
-    </div>
+</div>
 
-    <h2>Frequently Asked Questions</h2>
-    <div class="panel">
-      <h3>Is there any upfront cost?</h3><p>In most cases, no. We typically work on a success‑based fee.</p>
-      <h3>How long does it take?</h3><p>Varies by jurisdiction and holder—anywhere from weeks to a few months.</p>
-      <h3>Can I file myself?</h3><p>Sometimes, but errors and missed deadlines are common. We help ensure it’s done right.</p>
-      <h3>Who can claim?</h3><p>Former owners, heirs, estates, businesses, or other entitled parties.</p>
-    </div>
-
-    <section class="cta">
-      <h2>Start Your Free Funds Check</h2>
-      <p>You could be owed money and not even know it. Let us research it for you today.</p>
-      <a class="cta-btn alt" href="#contact">Get Started</a>
-    </section>
-
-    <footer style="background:#0f172a;color:#cbd5f5;padding:40px 20px;margin-top:80px;">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;">
-    
+<footer>
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;">
     <div>
-      <strong style="color:#ffffff;font-size:18px;">TMF Management Services</strong>
-      <p style="margin-top:8px;font-size:14px;color:#94a3b8;">
-        Professional Financial Asset & Surplus Funds Recovery Services
+      <strong style="font-size:18px;color:#fff">TMF Management Services</strong>
+      <p style="font-size:14px;color:#94a3b8;margin-top:8px">
+        Professional Asset & Surplus Funds Recovery Services
       </p>
     </div>
-
-    <div style="text-align:right;font-size:14px;">
-      <a href="privacy.html" style="color:#cbd5f5;margin-right:12px;text-decoration:none;">Privacy Policy</a>
-      <a href="terms.html" style="color:#cbd5f5;margin-right:12px;text-decoration:none;">Terms of Service</a>
-      <a href="disclaimer.html" style="color:#cbd5f5;text-decoration:none;">Disclaimer</a>
-      <div style="margin-top:10px;color:#64748b;">
-        © <span id="footerYear"></span> TMF Management Services. All rights reserved.
+    <div style="text-align:right;font-size:14px">
+      <a href="privacy.html" style="color:#cbd5f5;margin-right:12px">Privacy Policy</a>
+      <a href="terms.html" style="color:#cbd5f5;margin-right:12px">Terms</a>
+      <a href="disclaimer.html" style="color:#cbd5f5">Disclaimer</a>
+      <div style="margin-top:12px;color:#64748b">
+        © <span id="footerYear"></span> TMF Management Services
       </div>
     </div>
-
   </div>
 </footer>
 
 <script>
   document.getElementById("footerYear").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
