@@ -44,7 +44,60 @@
     .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
     .band{background:#f1f6ff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:36px 0}
     .cta{background:linear-gradient(135deg,#0b5ed7,#0d6efd);color:#fff;border-radius:28px;padding:56px;text-align:center;margin:64px 0}
-    footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;color:#64748b;font-size:14px}
+    .site-footer{
+  background:var(--ink);
+  color:#cbd5f5;
+  padding:56px 20px;
+  margin-top:80px;
+}
+
+.site-footer .footer-inner{
+  max-width:1180px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:32px;
+  align-items:center;
+}
+
+.site-footer .brand-name{
+  color:#ffffff;
+  font-size:20px;
+  font-weight:800;
+}
+
+.site-footer p{
+  color:#94a3b8;
+  font-size:14px;
+  margin-top:8px;
+}
+
+.site-footer .footer-links{
+  text-align:right;
+  font-size:14px;
+}
+
+.site-footer .footer-links a{
+  color:#cbd5f5;
+  margin-left:14px;
+}
+
+.site-footer .copyright{
+  margin-top:12px;
+  color:#64748b;
+  font-size:13px;
+}
+
+@media(max-width:900px){
+  .site-footer .footer-inner{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .site-footer .footer-links{
+    text-align:center;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -140,28 +193,25 @@
       <a class="cta-btn alt" href="#contact">Get Started</a>
     </section>
 
-    <footer style="background:#0f172a;color:#cbd5f5;padding:40px 20px;margin-top:80px;">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;">
+    <footer class="site-footer">
+  <div class="footer-inner">
     
     <div>
-      <strong style="color:#ffffff;font-size:18px;">TMF Management Services</strong>
-      <p style="margin-top:8px;font-size:14px;color:#94a3b8;">
-        Professional Financial Asset & Surplus Funds Recovery Services
-      </p>
+      <div class="brand-name">TMF Management Services</div>
+      <p>Professional Financial Asset & Surplus Funds Recovery Services</p>
     </div>
 
-    <div style="text-align:right;font-size:14px;">
-      <a href="privacy.html" style="color:#cbd5f5;margin-right:12px;text-decoration:none;">Privacy Policy</a>
-      <a href="terms.html" style="color:#cbd5f5;margin-right:12px;text-decoration:none;">Terms of Service</a>
-      <a href="disclaimer.html" style="color:#cbd5f5;text-decoration:none;">Disclaimer</a>
-      <div style="margin-top:10px;color:#64748b;">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <div class="copyright">
         © <span id="footerYear"></span> TMF Management Services. All rights reserved.
       </div>
     </div>
 
   </div>
 </footer>
-
 <script>
   document.getElementById("footerYear").textContent = new Date().getFullYear();
 </script>
