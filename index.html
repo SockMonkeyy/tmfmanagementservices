@@ -140,15 +140,30 @@
       <a class="cta-btn alt" href="#contact">Get Started</a>
     </section>
 
-    <footer>
-      <a href="privacy.html">Privacy Policy</a> | 
-<a href="terms.html">Terms of Service</a> | 
-<a href="disclaimer.html">Disclaimer</a>
+    <footer style="background:#0f172a;color:#cbd5f5;padding:40px 20px;margin-top:80px;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;">
+    
+    <div>
+      <strong style="color:#ffffff;font-size:18px;">TMF Management Services</strong>
+      <p style="margin-top:8px;font-size:14px;color:#94a3b8;">
+        Professional Financial Asset & Surplus Funds Recovery Services
+      </p>
+    </div>
 
-      © <span id="y"></span> TMF Management Services. All rights reserved. Informational only; not legal advice.
-    </footer>
+    <div style="text-align:right;font-size:14px;">
+      <a href="privacy.html" style="color:#cbd5f5;margin-right:12px;text-decoration:none;">Privacy Policy</a>
+      <a href="terms.html" style="color:#cbd5f5;margin-right:12px;text-decoration:none;">Terms of Service</a>
+      <a href="disclaimer.html" style="color:#cbd5f5;text-decoration:none;">Disclaimer</a>
+      <div style="margin-top:10px;color:#64748b;">
+        © <span id="footerYear"></span> TMF Management Services. All rights reserved.
+      </div>
+    </div>
+
   </div>
+</footer>
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script>
+  document.getElementById("footerYear").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
