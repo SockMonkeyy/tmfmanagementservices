@@ -9,40 +9,41 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #020617;
-      color: #f8fafc;
+      background: #ffffff;
+      color: #0f172a;
       line-height: 1.7;
     }
-    a { color: #6366f1; text-decoration: none; }
+    a { color: #2563eb; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .container { max-width: 1000px; margin: 0 auto; padding: 24px; }
-    header { display:flex; align-items:center; justify-content:space-between; padding:20px 0; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:40px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display:flex; align-items:center; justify-content:space-between; padding:20px 0; border-bottom:1px solid #e5e7eb; margin-bottom:40px; }
     .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:44px; height:44px; border-radius:12px; background:#4f46e5; display:flex; align-items:center; justify-content:center; font-weight:bold; }
-    .cta-btn { background:#4f46e5; color:white; padding:12px 18px; border-radius:10px; font-weight:bold; display:inline-block; }
-    .cta-btn:hover { background:#6366f1; }
-    h1 { font-size:44px; line-height:1.15; margin-bottom:16px; }
-    h2 { font-size:30px; margin-top:56px; margin-bottom:12px; }
+    .logo { width:44px; height:44px; border-radius:12px; background:#2563eb; display:flex; align-items:center; justify-content:center; font-weight:bold; color:white; }
+    .cta-btn { background:#2563eb; color:white; padding:12px 18px; border-radius:10px; font-weight:bold; display:inline-block; }
+    .cta-btn:hover { background:#1d4ed8; }
+    h1 { font-size:46px; line-height:1.15; margin-bottom:16px; }
+    h2 { font-size:32px; margin-top:64px; margin-bottom:12px; }
     h3 { font-size:22px; margin-top:28px; margin-bottom:8px; }
-    p { color:#cbd5e1; margin-bottom:16px; }
-    ul { margin-left:20px; margin-bottom:16px; color:#cbd5e1; }
+    p { color:#334155; margin-bottom:16px; }
+    ul { margin-left:20px; margin-bottom:16px; color:#334155; }
     li { margin-bottom:8px; }
-    .hero { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:20px; padding:40px; margin-bottom:40px; }
-    .hero-grid { display:grid; grid-template-columns:1.2fr 0.8fr; gap:32px; }
+    .hero { background:#f8fafc; border:1px solid #e5e7eb; border-radius:24px; padding:48px; margin-bottom:40px; }
+    .hero-grid { display:grid; grid-template-columns:1.2fr 0.8fr; gap:36px; }
     @media (max-width: 900px) { .hero-grid { grid-template-columns:1fr; } }
-    .highlight { background:rgba(79,70,229,0.15); border-left:4px solid #4f46e5; padding:16px; border-radius:8px; margin:24px 0; }
-    .box { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:24px; margin:24px 0; }
+    .highlight { background:#eff6ff; border-left:4px solid #2563eb; padding:16px; border-radius:8px; margin:24px 0; }
+    .box { background:#f8fafc; border:1px solid #e5e7eb; border-radius:16px; padding:24px; margin:24px 0; }
     .trust { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; }
     @media (max-width: 700px) { .trust { grid-template-columns:1fr; } }
-    .trust div { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:16px; text-align:center; }
-    .form-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:20px; padding:28px; }
-    label { display:block; margin-bottom:6px; color:#e5e7eb; font-size:14px; }
-    input, textarea { width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.15); background:#020617; color:white; margin-bottom:14px; font-size:15px; }
+    .trust div { background:white; border:1px solid #e5e7eb; border-radius:14px; padding:16px; text-align:center; font-weight:600; }
+    .form-card { background:white; border:1px solid #e5e7eb; border-radius:24px; padding:28px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+    label { display:block; margin-bottom:6px; color:#0f172a; font-size:14px; font-weight:600; }
+    input, textarea { width:100%; padding:12px 14px; border-radius:10px; border:1px solid #cbd5f5; background:white; color:#0f172a; margin-bottom:14px; font-size:15px; }
     textarea { resize:vertical; min-height:100px; }
-    button { padding:14px 18px; border-radius:10px; border:none; background:#4f46e5; color:white; font-weight:bold; cursor:pointer; width:100%; font-size:16px; }
-    button:hover { background:#6366f1; }
-    .cta { background:linear-gradient(135deg, #4f46e5, #6366f1); border-radius:24px; padding:48px; text-align:center; margin-top:80px; }
-    footer { margin-top:80px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.1); text-align:center; color:#94a3b8; font-size:14px; }
+    button { padding:14px 18px; border-radius:10px; border:none; background:#2563eb; color:white; font-weight:bold; cursor:pointer; width:100%; font-size:16px; }
+    button:hover { background:#1d4ed8; }
+    .cta { background:linear-gradient(135deg, #2563eb, #1d4ed8); border-radius:28px; padding:56px; text-align:center; margin-top:80px; color:white; }
+    .cta h2 { color:white; margin-top:0; }
+    footer { margin-top:80px; padding-top:24px; border-top:1px solid #e5e7eb; text-align:center; color:#64748b; font-size:14px; }
   </style>
 </head>
 <body>
@@ -53,7 +54,7 @@
         <div class="logo">TMF</div>
         <div>
           <strong>TMF Management Services</strong><br />
-          <span style="color:#94a3b8; font-size:14px;">Surplus & Excess Funds Recovery Specialists</span>
+          <span style="color:#64748b; font-size:14px;">Surplus & Excess Funds Recovery Specialists</span>
         </div>
       </div>
       <a class="cta-btn" href="#contact">Free Funds Check</a>
@@ -80,10 +81,9 @@
         </div>
         <div class="form-card" id="contact">
           <h3 style="margin-top:0; margin-bottom:12px;">Free Funds Check</h3>
-          <p style="font-size:14px;">Fill this out and we’ll check if money is owed to you. No obligation.</p>
+          <p style="font-size:14px; color:#475569;">Fill this out and we’ll check if money is owed to you. No obligation.</p>
 
-          <!-- REAL FORM: Works with Formspree (replace the action URL with your own endpoint) -->
-          <form action="https://formspree.io/f/xxxxxxx" method="POST">
+          <form action="https://formspree.io/f/xgooeqgy" method="POST">
             <label>Full Name</label>
             <input type="text" name="name" required />
 
@@ -102,7 +102,7 @@
             <button type="submit">Check If I’m Owed Money</button>
           </form>
 
-          <p style="font-size:12px; color:#94a3b8; margin-top:10px;">Your information is kept private and never sold.</p>
+          <p style="font-size:12px; color:#64748b; margin-top:10px;">Your information is kept private and never sold.</p>
         </div>
       </div>
     </section>
@@ -150,10 +150,10 @@
 
     <section class="cta">
       <h2>Find Out If You’re Owed Money — Free</h2>
-      <p style="color:#eef2ff; max-width:800px; margin: 0 auto 24px;">
+      <p style="max-width:800px; margin: 0 auto 24px;">
         You could be entitled to thousands of dollars and not even know it. Let TMF Management Services check for you today.
       </p>
-      <a class="cta-btn" href="#contact">Start My Free Funds Check</a>
+      <a class="cta-btn" href="#contact" style="background:white; color:#2563eb;">Start My Free Funds Check</a>
     </section>
 
     <footer>
