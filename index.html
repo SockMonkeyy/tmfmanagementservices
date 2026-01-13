@@ -3,244 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TMF Management Services | Surplus & Excess Funds Recovery Specialists</title>
-  <meta name="description" content="TMF Management Services helps former property owners recover surplus and excess funds after foreclosure and tax sales. Free funds check. No upfront fees in most cases." />
+  <title>TMF Management Services | Surplus & Unclaimed Funds Recovery</title>
+  <meta name="description" content="TMF Management Services helps individuals and estates recover surplus, excess proceeds, and other unclaimed funds. Free funds check. No upfront fees in most cases." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
-      color: #0f172a;
-      line-height: 1.7;
+    :root{
+      --blue:#0b5ed7;
+      --blue-2:#0d6efd;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#e5e7eb;
+      --bg:#ffffff;
+      --panel:#f8fafc;
     }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { display:flex; align-items:center; justify-content:space-between; padding:20px 0; border-bottom:1px solid #e5e7eb; margin-bottom:40px; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:44px; height:44px; border-radius:12px; background:#2563eb; display:flex; align-items:center; justify-content:center; font-weight:bold; color:white; }
-    .cta-btn { background:#2563eb; color:white; padding:12px 18px; border-radius:10px; font-weight:bold; display:inline-block; }
-    .cta-btn:hover { background:#1d4ed8; }
-    h1 { font-size:46px; line-height:1.15; margin-bottom:16px; }
-    h2 { font-size:32px; margin-top:64px; margin-bottom:12px; }
-    h3 { font-size:22px; margin-top:28px; margin-bottom:8px; }
-    p { color:#334155; margin-bottom:16px; }
-    ul { margin-left:20px; margin-bottom:16px; color:#334155; }
-    li { margin-bottom:8px; }
-    .hero { background:#f8fafc; border:1px solid #e5e7eb; border-radius:24px; padding:48px; margin-bottom:40px; }
-    .hero-grid { display:grid; grid-template-columns:1.2fr 0.8fr; gap:36px; }
-    @media (max-width: 900px) { .hero-grid { grid-template-columns:1fr; } }
-    .highlight { background:#eff6ff; border-left:4px solid #2563eb; padding:16px; border-radius:8px; margin:24px 0; }
-    .box { background:#f8fafc; border:1px solid #e5e7eb; border-radius:16px; padding:24px; margin:24px 0; }
-    .trust { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; }
-    @media (max-width: 700px) { .trust { grid-template-columns:1fr; } }
-    .trust div { background:white; border:1px solid #e5e7eb; border-radius:14px; padding:16px; text-align:center; font-weight:600; }
-    .form-card { background:white; border:1px solid #e5e7eb; border-radius:24px; padding:28px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-    label { display:block; margin-bottom:6px; color:#0f172a; font-size:14px; font-weight:600; }
-    input, textarea { width:100%; padding:12px 14px; border-radius:10px; border:1px solid #cbd5f5; background:white; color:#0f172a; margin-bottom:14px; font-size:15px; }
-    textarea { resize:vertical; min-height:100px; }
-    button { padding:14px 18px; border-radius:10px; border:none; background:#2563eb; color:white; font-weight:bold; cursor:pointer; width:100%; font-size:16px; }
-    button:hover { background:#1d4ed8; }
-    .cta { background:linear-gradient(135deg, #2563eb, #1d4ed8); border-radius:28px; padding:56px; text-align:center; margin-top:80px; color:white; }
-    .cta h2 { color:white; margin-top:0; }
-    footer { margin-top:80px; padding-top:24px; border-top:1px solid #e5e7eb; text-align:center; color:#64748b; font-size:14px; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, Arial, Helvetica, sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+    a{color:var(--blue);text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .cta-btn{background:var(--blue);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700}
+    .cta-btn.alt{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+    h1{font-size:44px;line-height:1.15;margin-bottom:14px}
+    h2{font-size:30px;margin:56px 0 12px}
+    h3{font-size:20px;margin:0 0 8px}
+    p{color:var(--muted);margin-bottom:14px}
+    ul{margin-left:18px;color:var(--muted)}
+    li{margin-bottom:8px}
+    .hero{background:linear-gradient(180deg,#f8fbff, #ffffff);border-bottom:1px solid var(--line)}
+    .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:56px 0}
+    @media(max-width:900px){.hero-inner{grid-template-columns:1fr}}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+    .kpis div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;font-weight:700}
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
+    .form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 25px rgba(0,0,0,.05)}
+    label{display:block;margin-bottom:6px;font-size:13px;font-weight:700}
+    input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #cbd5f5;margin-bottom:12px}
+    button{width:100%;padding:14px;border-radius:10px;border:none;background:var(--blue);color:#fff;font-weight:800;cursor:pointer}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media(max-width:900px){.grid-3{grid-template-columns:1fr}}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+    .band{background:#f1f6ff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:36px 0}
+    .cta{background:linear-gradient(135deg,#0b5ed7,#0d6efd);color:#fff;border-radius:28px;padding:56px;text-align:center;margin:64px 0}
+    footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;color:#64748b;font-size:14px}
   </style>
 </head>
 <body>
   <div class="container">
-
     <header>
       <div class="brand">
-        <img src="logo.png" alt="TMF Management Services Logo" style="height:72px; width:auto;" />
+        <img src="logo.png" alt="TMF Management Services Logo" style="height:84px;width:auto" />
         <div>
           <strong>TMF Management Services</strong><br />
-          <span style="color:#64748b; font-size:14px;">Surplus & Excess Funds Recovery Specialists</span>
+          <span style="color:#64748b;font-size:14px">Surplus & Unclaimed Funds Recovery</span>
         </div>
       </div>
       <a class="cta-btn" href="#contact">Free Funds Check</a>
     </header>
-
-    <section class="hero">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:24px;">
-        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Professional financial consultation" style="width:100%; border-radius:18px;" />
-        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop" alt="Reviewing documents for funds recovery" style="width:100%; border-radius:18px;" />
-      </div>
-      <div class="hero-grid">
-        <div>
-          <h1>You May Be Owed Money From a Foreclosure or Tax Sale</h1>
-          <p>
-            Every year, millions of dollars in <strong>surplus and excess funds</strong> go unclaimed after foreclosures and tax sales. Most former property owners never realize this money legally belongs to them.
-          </p>
-          <p>
-            <strong>TMF Management Services</strong> specializes in finding and recovering this money for you — handling all paperwork, filings, and follow-ups so you don’t have to.
-          </p>
-          <div class="highlight">
-            <strong>In most cases:</strong> No upfront fees. We only get paid if you get paid.
-          </div>
-          <div class="trust">
-            <div>✔ 100% Focused on Funds Recovery</div>
-            <div>✔ We Handle the Entire Process</div>
-            <div>✔ Fast, Professional & Transparent</div>
-          </div>
-        </div>
-        <div class="form-card" id="contact">
-          <h3 style="margin-top:0; margin-bottom:12px;">Free Funds Check</h3>
-          <p style="font-size:14px; color:#475569;">Fill this out and we’ll check if money is owed to you. No obligation.</p>
-
-          <form action="https://formspree.io/f/xgooeqgy" method="POST">
-            <label>Full Name</label>
-            <input type="text" name="name" required />
-
-            <label>Email</label>
-            <input type="email" name="email" required />
-
-            <label>Phone</label>
-            <input type="tel" name="phone" />
-
-            <label>Property Address (if known)</label>
-            <input type="text" name="property" />
-
-            <label>Tell us what happened (optional)</label>
-            <textarea name="message"></textarea>
-
-            <button type="submit">Check If I’m Owed Money</button>
-          </form>
-
-          <p style="font-size:12px; color:#64748b; margin-top:10px;">Your information is kept private and never sold.</p>
-        </div>
-      </div>
-    </section>
-
-    <h2>What Are Surplus & Excess Funds?</h2>
-    <p>
-      When a property is sold at a foreclosure auction or tax sale, it sometimes sells for more than the total amount owed on the mortgage, taxes, liens, and fees. The leftover money is called <strong>surplus funds</strong> or <strong>excess proceeds</strong>.
-    </p>
-    <p>
-      These funds usually belong to the former property owner — but they are <strong>not sent automatically</strong>. A proper claim must be filed.
-    </p>
-
-    <div class="highlight">
-      <strong>Important:</strong> If you miss the deadline to claim these funds, you could permanently lose them.
-    </div>
-
-    <h2>Why Most People Never Recover Their Money</h2>
-    <ul>
-      <li>They don’t know the money exists</li>
-      <li>They moved and never received notice</li>
-      <li>The process is confusing and time-sensitive</li>
-      <li>Claims get rejected due to paperwork errors</li>
-    </ul>
-
-    <h2>How TMF Management Services Helps</h2>
-    <div class="box">
-      <p>
-        Each year, millions of dollars are forfeited to government agencies or left sitting with courts, trustees, and other institutions because the rightful owners are never notified or don’t realize the money exists. Many individuals and businesses, through no fault of their own, are unaware that these funds belong to them.
-      </p>
-      <p>
-        <strong>TMF Management Services</strong> uses a proven, research-driven approach to locate and recover surplus, excess, and other unclaimed funds and return them to their rightful owners.
-      </p>
-      <p>
-        Our fund recovery service is among the most comprehensive available today for analyzing public and private records to identify and recover unclaimed, dormant, or undistributed funds. Our recovery team uses specialized tools and processes to filter through multiple data sources to locate and verify outstanding cash assets. These funds may belong to individuals, estates, small businesses, nonprofits, or other entities.
-      </p>
-      <p>
-        Just like with complex legal or administrative claims, we handle the entire process for you so you don’t have to deal with the paperwork, filings, and follow-ups. We then work directly with the courts, counties, trustees, and other holders to help expedite the process and get your funds released to you as quickly as possible.
-      </p>
-    </div>
-
-
-    <ul>
-      <li>Locate surplus funds that may be owed to you</li>
-      <li>Verify eligibility and ownership</li>
-      <li>Prepare and file all required documents</li>
-      <li>Work directly with courts, trustees, and counties</li>
-      <li>Track the claim until funds are released</li>
-    </ul>
-
-    <div class="highlight">
-      <strong>Bottom line:</strong> We handle the entire process so you avoid mistakes, delays, and missed deadlines.
-    </div>
-
-    <h2>Types of Funds We Recover</h2>
-    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop" alt="Financial documents and courthouse" style="width:100%; border-radius:18px; margin:16px 0 24px;" />
-    <div class="box">
-      <ul>
-        <li><strong>Foreclosure Surplus Funds:</strong> Extra proceeds left over after a foreclosure sale once the mortgage, liens, and fees are paid.</li>
-        <li><strong>Tax Sale Excess Proceeds:</strong> Funds remaining after a tax deed or tax lien sale that often belong to the former owner.</li>
-        <li><strong>Court Registry & Interpleader Funds:</strong> Money being held by courts that must be claimed through proper filings.</li>
-        <li><strong>Probate & Estate-Related Funds:</strong> Unclaimed or undistributed funds owed to heirs or estates.</li>
-        <li><strong>Trustee & Third-Party Held Funds:</strong> Proceeds being held by trustees, servicers, or other entities pending a valid claim.</li>
-        <li><strong>Other Unclaimed or Dormant Funds:</strong> In certain cases, additional categories of funds that require research and formal recovery.</li>
-      </ul>
-      <p>
-        If you’re not sure what type of funds may be owed to you, that’s okay — our team will research it for you as part of your free funds check.
-      </p>
-    </div>
-
-    <h2>Why Choose TMF Management Services?</h2>
-    <ul>
-      <li>✔ Specialized exclusively in surplus & excess funds recovery</li>
-      <li>✔ No confusing legal runaround</li>
-      <li>✔ No upfront fees in most cases</li>
-      <li>✔ Simple, transparent process</li>
-    </ul>
-
-    <h2>Our Simple 3-Step Process</h2>
-    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop" alt="Team working on recovery process" style="width:100%; border-radius:18px; margin:16px 0 24px;" />
-    <div class="box">
-      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; text-align:center;">
-        <div class="box">
-          <h3>1) We Find the Funds</h3>
-          <p>We research public and private records to identify surplus, excess, or other unclaimed funds that may be owed to you.</p>
-        </div>
-        <div class="box">
-          <h3>2) We File the Claim</h3>
-          <p>We prepare and submit all required paperwork, coordinate with the holder, and handle follow-ups to avoid delays.</p>
-        </div>
-        <div class="box">
-          <h3>3) You Get Paid</h3>
-          <p>Once approved, the funds are released. In most cases, you pay nothing unless we successfully recover your money.</p>
-        </div>
-      </div>
-    </div>
-
-    <h2>Frequently Asked Questions</h2>
-    <div class="box">
-      <h3>Is there any upfront cost?</h3>
-      <p>In most cases, no. We typically work on a success-based fee, which means we only get paid if you get paid.</p>
-
-      <h3>How long does the process take?</h3>
-      <p>Timelines vary by county, court, and fund holder. Some claims resolve in a few weeks, while others may take a few months. We track and follow up throughout the process.</p>
-
-      <h3>Can I file the claim myself?</h3>
-      <p>Sometimes, yes. However, many claims are delayed or denied due to errors, missing documents, or missed deadlines. We help ensure it’s done correctly the first time.</p>
-
-      <h3>What if I’m not sure whether I’m owed anything?</h3>
-      <p>That’s exactly what the free funds check is for. We’ll research it and let you know — no obligation.</p>
-
-      <h3>Who can claim these funds?</h3>
-      <p>Former property owners, heirs, estates, businesses, and other entitled parties may be eligible, depending on the situation.</p>
-
-      <h3>Do you work nationwide?</h3>
-      <p>We assist clients in many jurisdictions. Availability can depend on the type of funds and location, so it’s best to submit a free check.</p>
-    </div>
-
-    <section class="cta">
-      <h2>Find Out If You’re Owed Money — Free</h2>
-      <p style="max-width:800px; margin: 0 auto 24px;">
-        You could be entitled to thousands of dollars and not even know it. Let TMF Management Services check for you today.
-      </p>
-      <a class="cta-btn" href="#contact" style="background:white; color:#2563eb;">Start My Free Funds Check</a>
-    </section>
-
-    <footer>
-      © <span id="year"></span> TMF Management Services. All rights reserved. <br />
-      This content is for informational purposes only and does not constitute legal advice.
-    </footer>
-
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div>
+          <h1>Recover Surplus, Excess Proceeds & Unclaimed Funds</h1>
+          <p>Each year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions. TMF Management Services identifies and recovers these funds for their rightful owners—handling research, filings, and follow‑ups end‑to‑end.</p>
+          <div class="kpis">
+            <div>No Upfront Fees*</div>
+            <div>End‑to‑End Handling</div>
+            <div>Professional & Transparent</div>
+          </div>
+          <div style="margin-top:18px;display:flex;gap
