@@ -3,235 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TMF Management Services | Surplus & Unclaimed Funds Recovery</title>
-  <meta name="description" content="TMF Management Services helps individuals and estates recover surplus, excess proceeds, and other unclaimed funds. No upfront fees in most cases." />
-
-  <style>
-    :root{
-      --primary:#0b5ed7;
-      --primary-dark:#084298;
-      --ink:#0f172a;
-      --muted:#475569;
-      --line:#e5e7eb;
-      --bg:#ffffff;
-      --soft:#f8fafc;
-      --panel:#f1f5f9;
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Inter, Arial, Helvetica, sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
-    a{text-decoration:none}
-
-    .container{max-width:1180px;margin:0 auto;padding:24px}
-
-    header{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:22px 0;border-bottom:1px solid var(--line);
-    }
-    .brand{display:flex;align-items:center;gap:16px}
-    .brand img{height:96px}
-
-    .cta-btn{
-      background:var(--primary);color:#fff;padding:14px 22px;border-radius:8px;
-      font-weight:700;display:inline-block
-    }
-    .cta-btn.alt{
-      background:#fff;color:var(--primary);border:2px solid var(--primary)
-    }
-
-    h1{font-size:46px;line-height:1.15;margin-bottom:16px}
-    h2{font-size:34px;margin:80px 0 16px}
-    h3{font-size:20px;margin-bottom:8px}
-    p{color:var(--muted);margin-bottom:14px}
-
-    /* HERO */
-    .hero{
-      background:linear-gradient(180deg,#f8fbff,#ffffff);
-      border-bottom:1px solid var(--line);
-    }
-    .hero-inner{
-      display:grid;grid-template-columns:1.1fr .9fr;gap:40px;
-      align-items:center;padding:80px 0
-    }
-    @media(max-width:900px){
-      .hero-inner{grid-template-columns:1fr}
-    }
-
-    .kpis{
-      display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px
-    }
-    .kpis div{
-      background:#fff;border:1px solid var(--line);border-radius:10px;
-      padding:16px;text-align:center;font-weight:700
-    }
-
-    /* FORM */
-    .form-card{
-      background:#fff;border:1px solid var(--line);border-radius:16px;
-      padding:28px;box-shadow:0 12px 30px rgba(0,0,0,.08)
-    }
-    label{display:block;margin-bottom:6px;font-size:13px;font-weight:700}
-    input,textarea{
-      width:100%;padding:12px 14px;border-radius:8px;
-      border:1px solid #cbd5e1;margin-bottom:12px
-    }
-    button{
-      width:100%;padding:14px;border-radius:8px;border:none;
-      background:var(--primary);color:#fff;font-weight:800;font-size:16px;cursor:pointer
-    }
-
-    /* SECTIONS */
-    .panel{
-      background:var(--panel);border-radius:16px;padding:32px;border:1px solid var(--line)
-    }
-
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    @media(max-width:900px){.grid-3{grid-template-columns:1fr}}
-
-    .card{
-      background:#fff;border:1px solid var(--line);border-radius:14px;
-      padding:26px
-    }
-
-    .band{
-      background:#f8fafc;border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);padding:80px 0;margin-top:80px
-    }
-
-    /* CTA */
-    .cta{
-      background:linear-gradient(135deg,#0b5ed7,#0d6efd);
-      color:#fff;border-radius:28px;padding:80px;text-align:center;margin:100px 0
-    }
-    .cta h2{margin-top:0;color:#fff}
-    .cta p{color:#e0e7ff}
-
-    /* FOOTER */
-    footer{
-      background:#0f172a;color:#cbd5f5;padding:60px 20px;margin-top:120px
-    }
-  </style>
+  <title>TMF Management Services — Recover Unclaimed Funds</title>
+  <meta name="description" content="TMF Management Services helps clients recover surplus, excess proceeds, and unclaimed funds from foreclosures, tax sales, and court actions. No recovery, no fee." />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-50 text-gray-900">
 
-<body>
-
-<div class="container">
-  <header>
-    <div class="brand">
-      <img src="logo.png" alt="TMF Management Services Logo" />
+  <!-- Hero Section -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <strong style="font-size:20px">TMF Management Services</strong><br>
-        <span style="color:#64748b;font-size:14px">Surplus & Unclaimed Funds Recovery</span>
-      </div>
-    </div>
-    <a class="cta-btn" href="#contact">Free Funds Check</a>
-  </header>
-</div>
+        <div class="mb-6 inline-flex items-center gap-2 bg-green-50 text-green-800 px-4 py-2 rounded-full shadow-sm">
+          <span class="font-semibold">No Recovery, No Fee</span>
+          <span class="text-sm">— You only pay if we successfully recover funds</span>
+        </div>
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div>
-        <h1>Recover Surplus, Excess Proceeds & Unclaimed Funds</h1>
-        <p>
-          Every year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions.
-          TMF Management Services identifies and recovers these funds for their rightful owners — handling
-          research, filings, and follow-ups end-to-end.
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          Recover Your <span class="text-blue-600">Surplus, Excess Proceeds & Unclaimed Funds</span>
+        </h1>
+        <p class="text-lg text-gray-700 mb-6">
+          Every year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions. TMF Management Services identifies and recovers these funds for their rightful owners — handling research, filings, and follow-ups end-to-end.
         </p>
-
-        <div class="kpis">
-          <div>No Upfront Fees*</div>
-          <div>End-to-End Handling</div>
-          <div>Professional & Compliant</div>
-        </div>
-
-        <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap">
-          <a class="cta-btn" href="#contact">Start Free Funds Check</a>
-          <a class="cta-btn alt" href="#process">How It Works</a>
-        </div>
+        <ul class="space-y-3 mb-8">
+          <li>✅ No upfront cost to check if you are owed money</li>
+          <li>✅ We handle the paperwork and process</li>
+          <li>✅ Fast, professional, and confidential</li>
+        </ul>
+        <a href="#claim" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-2xl shadow hover:bg-blue-700 transition">
+          Check If You Are Owed Money
+        </a>
       </div>
-
-      <div class="form-card" id="contact">
-        <h3>Free Funds Check</h3>
-        <p style="font-size:14px">No obligation. We’ll research whether funds may be owed to you.</p>
-
-        <form action="https://formspree.io/f/xgooeqgy" method="POST">
-          <label>Full Name</label><input name="name" required>
-          <label>Email</label><input type="email" name="email" required>
-          <label>Phone</label><input name="phone">
-          <label>Property Address (if known)</label><input name="property">
-          <label>Details (optional)</label><textarea name="message"></textarea>
-          <button type="submit">Check If I’m Owed Money</button>
-        </form>
-
-        <p style="font-size:12px;margin-top:10px">*In most cases. You pay only if we successfully recover funds.</p>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" alt="Home and documents" class="rounded-2xl shadow-2xl" />
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="container">
-
-<h2>What We Do</h2>
-<div class="panel">
-  <p>
-    TMF Management Services provides comprehensive asset recovery for surplus, excess proceeds,
-    and other unclaimed or undistributed funds. We analyze public and private records, verify entitlement,
-    prepare and submit claims, and work directly with courts, counties, trustees, and holders to expedite release.
-  </p>
-</div>
-
-<h2>Types of Funds We Recover</h2>
-<div class="grid-3">
-  <div class="card"><h3>Foreclosure Surplus</h3><p>Proceeds remaining after foreclosure sales.</p></div>
-  <div class="card"><h3>Tax Sale Excess Proceeds</h3><p>Funds remaining after tax deed or tax lien sales.</p></div>
-  <div class="card"><h3>Court Registry Funds</h3><p>Interpleader and court-held funds.</p></div>
-  <div class="card"><h3>Probate & Estate Funds</h3><p>Undistributed funds owed to heirs.</p></div>
-  <div class="card"><h3>Trustee-Held Funds</h3><p>Funds held by trustees and servicers.</p></div>
-  <div class="card"><h3>Other Unclaimed Assets</h3><p>Additional categories requiring forensic research.</p></div>
-</div>
-
-<section id="process" class="band">
-  <div class="container">
-    <h2>Our Simple 3-Step Process</h2>
-    <div class="grid-3">
-      <div class="card"><h3>1) We Find the Funds</h3><p>We research records across jurisdictions.</p></div>
-      <div class="card"><h3>2) We File the Claim</h3><p>We prepare, submit, and manage documentation.</p></div>
-      <div class="card"><h3>3) You Get Paid</h3><p>Once approved, funds are released.</p></div>
+  <!-- Trust Section -->
+  <section class="bg-blue-50">
+    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Reviewing financial paperwork" class="rounded-2xl shadow" />
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold mb-4">You Might Be Owed Thousands</h2>
+        <p class="text-gray-700 mb-4">
+          If you or someone you know lost a property to foreclosure, tax sale, or court action, there may be surplus funds waiting to be claimed.
+        </p>
+        <p class="text-gray-700">
+          Many people never realize this money exists — or assume it’s too complicated to recover. That’s where we come in.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta">
-  <h2>Start Your Free Funds Check</h2>
-  <p>You could be owed money and not even know it.</p>
-  <a class="cta-btn alt" href="#contact">Get Started</a>
-</section>
-
-</div>
-
-<footer>
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-    <div>
-      <strong style="font-size:18px;color:#fff">TMF Management Services</strong>
-      <p style="font-size:14px;color:#94a3b8;margin-top:8px">
-        Professional Asset & Surplus Funds Recovery Services
+  <!-- No Recovery No Fee Section -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <h2 class="text-3xl font-bold mb-4">Our Guarantee: No Recovery, No Fee</h2>
+      <p class="text-lg text-gray-700 mb-6">
+        You take zero financial risk. We only get paid if we successfully recover surplus, excess proceeds, or unclaimed funds for you.
       </p>
-    </div>
-    <div style="text-align:right;font-size:14px">
-      <a href="privacy.html" style="color:#cbd5f5;margin-right:12px">Privacy Policy</a>
-      <a href="terms.html" style="color:#cbd5f5;margin-right:12px">Terms</a>
-      <a href="disclaimer.html" style="color:#cbd5f5">Disclaimer</a>
-      <div style="margin-top:12px;color:#64748b">
-        © <span id="footerYear"></span> TMF Management Services
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-6 shadow">
+          <p class="text-xl font-semibold mb-2">✅ No Upfront Costs</p>
+          <p class="text-gray-700">You never pay anything to start your claim.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6 shadow">
+          <p class="text-xl font-semibold mb-2">✅ We Take the Risk</p>
+          <p class="text-gray-700">We invest the time and resources to recover your funds.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6 shadow">
+          <p class="text-xl font-semibold mb-2">✅ You Only Pay if You Win</p>
+          <p class="text-gray-700">If we don’t recover money for you, you owe us nothing.</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<script>
-  document.getElementById("footerYear").textContent = new Date().getFullYear();
-</script>
+  <!-- How It Works -->
+  <section class="bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow text-center">
+          <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=800&q=80" alt="Research" class="rounded-xl mb-4 h-40 w-full object-cover" />
+          <h3 class="text-xl font-semibold mb-3">1. We Research</h3>
+          <p class="text-gray-700">We search public records to see if surplus or unclaimed funds exist in your name.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow text-center">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80" alt="Filing paperwork" class="rounded-xl mb-4 h-40 w-full object-cover" />
+          <h3 class="text-xl font-semibold mb-3">2. We File</h3>
+          <p class="text-gray-700">We prepare and submit all required paperwork and claims on your behalf.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow text-center">
+          <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=800&q=80" alt="Getting paid" class="rounded-xl mb-4 h-40 w-full object-cover" />
+          <h3 class="text-xl font-semibold mb-3">3. You Get Paid</h3>
+          <p class="text-gray-700">Once approved, the funds are released to you. We make the process simple.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Claim Form -->
+  <section id="claim" class="bg-white">
+    <div class="max-w-4xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-4">Check If You Have Unclaimed Funds</h2>
+
+      <div class="max-w-xl mx-auto mb-6">
+        <div class="text-center inline-flex items-center justify-center gap-2 bg-green-50 text-green-800 px-4 py-2 rounded-full shadow-sm w-full">
+          <span class="font-semibold">No Recovery, No Fee</span>
+          <span class="text-sm">— If we don’t recover funds, you owe nothing.</span>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-700 mb-10">
+        Fill out the form below and we’ll review your case. There is no obligation.
+      </p>
+
+      <form action="https://formspree.io/f/xgooeqgy" method="POST" class="bg-gray-50 rounded-2xl p-8 shadow space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-1 font-medium">Full Name</label>
+            <input type="text" name="name" required class="w-full border rounded-xl px-4 py-3" />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Email</label>
+            <input type="email" name="email" required class="w-full border rounded-xl px-4 py-3" />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-1 font-medium">Phone</label>
+            <input type="text" name="phone" class="w-full border rounded-xl px-4 py-3" />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Property Address (if known)</label>
+            <input type="text" name="property" class="w-full border rounded-xl px-4 py-3" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block mb-1 font-medium">Tell us what happened</label>
+          <textarea name="message" rows="4" class="w-full border rounded-xl px-4 py-3"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-2xl font-semibold text-lg hover:bg-blue-700 transition">
+          Submit For Review
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-6xl mx-auto px-6 py-10 text-center">
+      <p class="mb-2 font-semibold">TMF Management Services</p>
+      <p class="text-sm">Helping clients recover surplus, excess proceeds, and unclaimed funds.</p>
+      <p class="text-xs mt-4 text-gray-500">© <span id="year"></span> TMF Management Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
