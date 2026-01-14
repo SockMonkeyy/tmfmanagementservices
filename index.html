@@ -50,21 +50,11 @@
       border-bottom:1px solid var(--line);
     }
     .hero-inner{
-      display:grid;
-      grid-template-columns:1.1fr .9fr .9fr;
-      gap:40px;
-      align-items:center;
-      padding:80px 0
+      display:grid;grid-template-columns:1.1fr .9fr;gap:40px;
+      align-items:center;padding:80px 0
     }
-    @media(max-width:1000px){
+    @media(max-width:900px){
       .hero-inner{grid-template-columns:1fr}
-    }
-
-    .hero-image{
-      width:100%;
-      border-radius:16px;
-      box-shadow:0 20px 40px rgba(0,0,0,.15);
-      object-fit:cover;
     }
 
     .kpis{
@@ -141,13 +131,12 @@
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
-
-      <!-- TEXT -->
       <div>
         <h1>Recover Surplus, Excess Proceeds & Unclaimed Funds</h1>
         <p>
           Every year, millions of dollars remain unclaimed after foreclosures, tax sales, and court actions.
-          TMF Management Services identifies and recovers these funds for their rightful owners.
+          TMF Management Services identifies and recovers these funds for their rightful owners — handling
+          research, filings, and follow-ups end-to-end.
         </p>
 
         <div class="kpis">
@@ -162,12 +151,6 @@
         </div>
       </div>
 
-      <!-- IMAGE -->
-      <div>
-        <img src="hero.jpg" alt="Financial recovery and asset research" class="hero-image">
-      </div>
-
-      <!-- FORM -->
       <div class="form-card" id="contact">
         <h3>Free Funds Check</h3>
         <p style="font-size:14px">No obligation. We’ll research whether funds may be owed to you.</p>
@@ -183,13 +166,71 @@
 
         <p style="font-size:12px;margin-top:10px">*In most cases. You pay only if we successfully recover funds.</p>
       </div>
-
     </div>
   </div>
 </section>
 
+<div class="container">
+
+<h2>What We Do</h2>
+<div class="panel">
+  <p>
+    TMF Management Services provides comprehensive asset recovery for surplus, excess proceeds,
+    and other unclaimed or undistributed funds. We analyze public and private records, verify entitlement,
+    prepare and submit claims, and work directly with courts, counties, trustees, and holders to expedite release.
+  </p>
+</div>
+
+<h2>Types of Funds We Recover</h2>
+<div class="grid-3">
+  <div class="card"><h3>Foreclosure Surplus</h3><p>Proceeds remaining after foreclosure sales.</p></div>
+  <div class="card"><h3>Tax Sale Excess Proceeds</h3><p>Funds remaining after tax deed or tax lien sales.</p></div>
+  <div class="card"><h3>Court Registry Funds</h3><p>Interpleader and court-held funds.</p></div>
+  <div class="card"><h3>Probate & Estate Funds</h3><p>Undistributed funds owed to heirs.</p></div>
+  <div class="card"><h3>Trustee-Held Funds</h3><p>Funds held by trustees and servicers.</p></div>
+  <div class="card"><h3>Other Unclaimed Assets</h3><p>Additional categories requiring forensic research.</p></div>
+</div>
+
+<section id="process" class="band">
+  <div class="container">
+    <h2>Our Simple 3-Step Process</h2>
+    <div class="grid-3">
+      <div class="card"><h3>1) We Find the Funds</h3><p>We research records across jurisdictions.</p></div>
+      <div class="card"><h3>2) We File the Claim</h3><p>We prepare, submit, and manage documentation.</p></div>
+      <div class="card"><h3>3) You Get Paid</h3><p>Once approved, funds are released.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Start Your Free Funds Check</h2>
+  <p>You could be owed money and not even know it.</p>
+  <a class="cta-btn alt" href="#contact">Get Started</a>
+</section>
+
+</div>
+
+<footer>
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+    <div>
+      <strong style="font-size:18px;color:#fff">TMF Management Services</strong>
+      <p style="font-size:14px;color:#94a3b8;margin-top:8px">
+        Professional Asset & Surplus Funds Recovery Services
+      </p>
+    </div>
+    <div style="text-align:right;font-size:14px">
+      <a href="privacy.html" style="color:#cbd5f5;margin-right:12px">Privacy Policy</a>
+      <a href="terms.html" style="color:#cbd5f5;margin-right:12px">Terms</a>
+      <a href="disclaimer.html" style="color:#cbd5f5">Disclaimer</a>
+      <div style="margin-top:12px;color:#64748b">
+        © <span id="footerYear"></span> TMF Management Services
+      </div>
+    </div>
+  </div>
+</footer>
+
 <script>
-  document.getElementById("footerYear")?.textContent = new Date().getFullYear();
+  document.getElementById("footerYear").textContent = new Date().getFullYear();
 </script>
 
 </body>
