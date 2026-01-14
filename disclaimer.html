@@ -2,54 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Disclaimer | TMF Management Services</title>
-  <meta name="description" content="Legal disclaimer and no legal advice notice for TMF Management Services."/>
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#0f172a;line-height:1.7}
-    .container{max-width:900px;margin:0 auto;padding:32px}
-    h1{font-size:36px;margin-bottom:16px}
-    h2{font-size:22px;margin-top:32px}
-    p,li{color:#334155}
-    ul{margin-left:20px}
-    a{color:#0b5ed7;text-decoration:none}
-    header{border-bottom:1px solid #e5e7eb;margin-bottom:24px;padding-bottom:12px}
-    footer{border-top:1px solid #e5e7eb;margin-top:48px;padding-top:16px;color:#64748b;font-size:14px}
-  </style>
+  <meta name="description" content="Disclaimer for TMF Management Services." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <a href="index.html">← Back to Home</a>
-    </header>
+<body class="bg-gray-50 text-gray-900">
 
-    <h1>Disclaimer & No Legal Advice</h1>
-    <p><strong>Effective Date:</strong> <span id="year"></span></p>
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold text-gray-900">TMF Management Services</a>
+      <a href="index.html#claim" class="bg-blue-600 text-white px-5 py-2 rounded-xl font-semibold hover:bg-blue-700 transition">Check If You’re Owed Money</a>
+    </div>
+  </header>
 
-    <p>
-      This website is operated by <strong>TMF Management Services</strong> (“TMF,” “we,” “us,” or “our”).
-      The information provided on this website is for general informational purposes only.
-    </p>
+  <!-- Content -->
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold mb-6">Disclaimer</h1>
+    <p class="text-gray-600 mb-8">Last updated: <span id="date"></span></p>
 
-    <h2>1. No Legal Advice</h2>
-    <p>
-      TMF Management Services is not a law firm and does not provide legal advice. Nothing on this website,
-      in our communications, or in our services should be construed as legal advice, legal opinions, or
-      legal representation.
-    </p>
-    <p>
-      You should consult a licensed attorney in your jurisdiction for advice regarding your specific legal
-      situation or rights.
-    </p>
+    <div class="space-y-6 text-gray-800">
+      <p>
+        The information provided by TMF Management Services on this website is for general informational purposes only. All information is provided in good faith; however, we make no representation or warranty of any kind regarding the accuracy, adequacy, validity, reliability, or completeness of any information on the site.
+      </p>
 
-    <h2>2. No Attorney-Client Relationship</h2>
-    <p>
-      Use of this website, submission of information, or communication with TMF Management Services does
-      not create an attorney-client relationship or any other fiduciary relationship.
-    </p>
+      <h2 class="text-2xl font-semibold mt-8">No Legal or Financial Advice</h2>
+      <p>
+        TMF Management Services is not a law firm and does not provide legal or financial advice. Nothing on this website should be construed as legal, financial, or professional advice.
+      </p>
 
-    <h2>3. Informational Purposes Only</h2>
-    <p>
-      Any information on this website regarding surplus funds, excess proceeds, unclaimed assets, court
-      processes, or recovery procedures is provided for general educational purposes and may not reflect
-      the most current legal or proc
+      <h2 class="text-2xl font-semibold mt-8">No Guarantees</h2>
+      <p>
+        We do not guarantee that any funds will be found or recovered in any particular case. Any examples or statements regarding potential outcomes are illustrative only and not a promise of results.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8">External Links</h2>
+      <p>
+        This website may contain links to third-party websites or services. We do not warrant, endorse, or assume responsibility for the accuracy or reliability of any information offered by third-party websites.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8">Limitation of Liability</h2>
+      <p>
+        Under no circumstance shall TMF Management Services be liable for any loss or damage of any kind incurred as a result of the use of the website or reliance on any information provided on the website.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8">Contact</h2>
+      <p>
+        If you have any questions about this Disclaimer, please contact us through the form on our website.
+      </p>
+
+      <div class="mt-10 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-sm text-yellow-800">
+        <strong>Important:</strong> This disclaimer is provided for general informational purposes and does not constitute legal advice.
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <a href="index.html" class="text-blue-600 hover:underline">← Back to Home</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-6xl mx-auto px-6 py-10 text-center">
+      <p class="mb-2 font-semibold">TMF Management Services</p>
+      <p class="text-sm mb-4">Helping clients recover surplus, excess proceeds, and unclaimed funds.</p>
+
+      <div class="flex justify-center gap-6 text-sm mb-6">
+        <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+        <a href="disclaimer.html" class="hover:text-white">Disclaimer</a>
+        <a href="terms.html" class="hover:text-white">Terms</a>
+      </div>
+
+      <p class="text-xs text-gray-500">© <span id="year"></span> TMF Management Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('date').textContent = new Date().toLocaleDateString();
+  </script>
+
+</body>
+</html>
